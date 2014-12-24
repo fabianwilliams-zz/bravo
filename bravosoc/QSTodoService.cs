@@ -71,9 +71,10 @@ namespace bravosoc
                 await SyncAsync(); 							
 
                 // This code refreshes the entries in the list view by querying the local TodoItems table.
-                // The query excludes completed TodoItems
+                // The query excludes completed TodoItems -- not anymore
+                //I took out todoItems.Complete and replaced it with todoItem.Remove -- Fabian Williams
                 Items = await todoTable
-                    	.Where (todoItem => todoItem.Complete == false).ToListAsync ();
+                    	.Where (todoItem => todoItem.Remove == false).ToListAsync ();
 
             } catch (MobileServiceInvalidOperationException e) {
                 Console.Error.WriteLine (@"ERROR {0}", e.Message);
@@ -99,8 +100,10 @@ namespace bravosoc
         public async Task CompleteItemAsync (ToDoItem item)
         {
             try {
-				item.Complete = true; 
+				//changed item.Compete below to item.Remove -- fabian williams
+                item.Remove = true; 
                 await todoTable.UpdateAsync (item); // update todo item in the local database
+                //not any more in comments as i changed it to remove not complete 
 				await SyncAsync(); // send changes to the mobile service
 
                 Items.Remove (item);

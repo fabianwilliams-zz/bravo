@@ -71,7 +71,9 @@ namespace bravosoc
 		public override string TitleForDeleteConfirmation (UITableView tableView, NSIndexPath indexPath)
 		{
 			// Customize the Delete button to say "complete"
-			return @"complete";
+            //changing that to "remove" -- fabian williams
+			//return @"complete"; -- commented out by fabian williams
+		    return @"remove";
 		}
 
 		public override UITableViewCellEditingStyle EditingStyleForRow (UITableView tableView, NSIndexPath indexPath)
@@ -80,7 +82,8 @@ namespace bravosoc
 			var item = todoService.Items [indexPath.Row];
 
 			// If the item is complete, then this is just pending upload. Editing is not allowed
-			if (item.Complete)
+			//if (item.Complete) //commented out by fabian williams
+            if (item.Remove) //added this to match with extending the app
 				return UITableViewCellEditingStyle.None;
 
 			// Otherwise, allow the delete button to appear
