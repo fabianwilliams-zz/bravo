@@ -18,6 +18,8 @@ For the Client "this is a work in progress (WIP)"
 2. Updated the QSToDoService.cs to take out the refernce for "Complete" as this is no longer a ToDo app to "remove" to reflect deleting someone from the list
 3. Updated QSCOntroller.cs to add the fields in the method that the button add is connected to so that it will update the SQL Database. As of 12/24/14 4 am EST, i have not created the additional controls UITextField for the additonal fields yet, i have just created dummy data in the method call
 //End 12/24/2014
+---
 ### SharePoint Saturday Branch Began
+---
 ```sh
 $ Added New Branch for SPSVB 2015 http://www.events.org/city/VaBeach/vb2015/
