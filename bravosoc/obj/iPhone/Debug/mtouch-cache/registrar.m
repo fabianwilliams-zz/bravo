@@ -703,6 +703,119 @@ bool native_to_managed_trampoline_17 (id self, SEL _cmd, MonoMethod **managed_me
 	}
 @end
 
+@interface QSTodoListViewController : UITableViewController {
+	void *__monoObjectGCHandle;
+}
+	@property (nonatomic, assign) id itemText;
+	-(void) release;
+	-(id) retain;
+	-(void) dealloc;
+	-(id) itemText;
+	-(void) setItemText:(id)p0;
+	-(void) viewDidLoad;
+	-(int) tableView:(id)p0 numberOfRowsInSection:(int)p1;
+	-(int) numberOfSectionsInTableView:(id)p0;
+	-(id) tableView:(id)p0 cellForRowAtIndexPath:(id)p1;
+	-(NSString *) tableView:(id)p0 titleForDeleteConfirmationButtonForRowAtIndexPath:(id)p1;
+	-(int) tableView:(id)p0 editingStyleForRowAtIndexPath:(id)p1;
+	-(void) tableView:(id)p0 commitEditingStyle:(int)p1 forRowAtIndexPath:(id)p2;
+	-(void) OnAdd:(id)p0;
+	-(bool) textFieldShouldReturn:(id)p0;
+	-(bool) conformsToProtocol:(void *)p0;
+@end
+@implementation QSTodoListViewController { } 
+	-(void) release
+	{
+		monotouch_release_trampoline (self, _cmd);
+	}
+
+	-(id) retain
+	{
+		return monotouch_retain_trampoline (self, _cmd);
+	}
+
+	-(void) dealloc
+	{
+		int gchandle = monotouch_get_gchandle (self);
+		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
+		monotouch_free_gchandle (self, gchandle);
+		mono_thread_detach_if_exiting ();
+		[super dealloc];
+	}
+
+	-(id) itemText
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "get_itemText");
+	}
+
+	-(void) setItemText:(id)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITextField, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "set_itemText");
+	}
+
+	-(void) viewDidLoad
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidLoad");
+	}
+
+	-(int) tableView:(id)p0 numberOfRowsInSection:(int)p1
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "RowsInSection");
+	}
+
+	-(int) numberOfSectionsInTableView:(id)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "NumberOfSections");
+	}
+
+	-(id) tableView:(id)p0 cellForRowAtIndexPath:(id)p1
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "GetCell");
+	}
+
+	-(NSString *) tableView:(id)p0 titleForDeleteConfirmationButtonForRowAtIndexPath:(id)p1
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "TitleForDeleteConfirmation");
+	}
+
+	-(int) tableView:(id)p0 editingStyleForRowAtIndexPath:(id)p1
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "EditingStyleForRow");
+	}
+
+	-(void) tableView:(id)p0 commitEditingStyle:(int)p1 forRowAtIndexPath:(id)p2
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, p1, p2, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.UIKit.UITableViewCellEditingStyle, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "CommitEditingStyle");
+	}
+
+	-(void) OnAdd:(id)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIButton, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "OnAdd");
+	}
+
+	-(bool) textFieldShouldReturn:(id)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITextField, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "ShouldReturn");
+	}
+
+	-(bool) conformsToProtocol:(void *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, "System.IntPtr, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "MonoTouch.Foundation.NSObject, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "InvokeConformsToProtocol");
+	}
+@end
+
 @interface AddSocialContact : UIViewController {
 	void *__monoObjectGCHandle;
 }
@@ -751,6 +864,8 @@ bool native_to_managed_trampoline_17 (id self, SEL _cmd, MonoMethod **managed_me
 	-(void) setTxtName:(id)p0;
 	-(id) txtTwitter;
 	-(void) setTxtTwitter:(id)p0;
+	-(void) viewDidLoad;
+	-(void) Clicked:(id)p0;
 	-(bool) conformsToProtocol:(void *)p0;
 @end
 @implementation AddSocialContact { } 
@@ -941,117 +1056,16 @@ bool native_to_managed_trampoline_17 (id self, SEL _cmd, MonoMethod **managed_me
 		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITextField, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.AddSocialContact, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "set_txtTwitter");
 	}
 
-	-(bool) conformsToProtocol:(void *)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, "System.IntPtr, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "MonoTouch.Foundation.NSObject, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "InvokeConformsToProtocol");
-	}
-@end
-
-@interface QSTodoListViewController : UITableViewController {
-	void *__monoObjectGCHandle;
-}
-	@property (nonatomic, assign) id itemText;
-	-(void) release;
-	-(id) retain;
-	-(void) dealloc;
-	-(id) itemText;
-	-(void) setItemText:(id)p0;
-	-(void) viewDidLoad;
-	-(int) tableView:(id)p0 numberOfRowsInSection:(int)p1;
-	-(int) numberOfSectionsInTableView:(id)p0;
-	-(id) tableView:(id)p0 cellForRowAtIndexPath:(id)p1;
-	-(NSString *) tableView:(id)p0 titleForDeleteConfirmationButtonForRowAtIndexPath:(id)p1;
-	-(int) tableView:(id)p0 editingStyleForRowAtIndexPath:(id)p1;
-	-(void) tableView:(id)p0 commitEditingStyle:(int)p1 forRowAtIndexPath:(id)p2;
-	-(void) OnAdd:(id)p0;
-	-(bool) textFieldShouldReturn:(id)p0;
-	-(bool) conformsToProtocol:(void *)p0;
-@end
-@implementation QSTodoListViewController { } 
-	-(void) release
-	{
-		monotouch_release_trampoline (self, _cmd);
-	}
-
-	-(id) retain
-	{
-		return monotouch_retain_trampoline (self, _cmd);
-	}
-
-	-(void) dealloc
-	{
-		int gchandle = monotouch_get_gchandle (self);
-		monotouch_unregister_object (self, mono_gchandle_get_target (gchandle));
-		monotouch_free_gchandle (self, gchandle);
-		mono_thread_detach_if_exiting ();
-		[super dealloc];
-	}
-
-	-(id) itemText
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "get_itemText");
-	}
-
-	-(void) setItemText:(id)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITextField, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "set_itemText");
-	}
-
 	-(void) viewDidLoad
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_5 (self, _cmd, &managed_method, "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidLoad");
+		native_to_managed_trampoline_5 (self, _cmd, &managed_method, "bravosoc.AddSocialContact, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "ViewDidLoad");
 	}
 
-	-(int) tableView:(id)p0 numberOfRowsInSection:(int)p1
+	-(void) Clicked:(id)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "System.Int32, mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "RowsInSection");
-	}
-
-	-(int) numberOfSectionsInTableView:(id)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "NumberOfSections");
-	}
-
-	-(id) tableView:(id)p0 cellForRowAtIndexPath:(id)p1
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "GetCell");
-	}
-
-	-(NSString *) tableView:(id)p0 titleForDeleteConfirmationButtonForRowAtIndexPath:(id)p1
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "TitleForDeleteConfirmation");
-	}
-
-	-(int) tableView:(id)p0 editingStyleForRowAtIndexPath:(id)p1
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "EditingStyleForRow");
-	}
-
-	-(void) tableView:(id)p0 commitEditingStyle:(int)p1 forRowAtIndexPath:(id)p2
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, p1, p2, "MonoTouch.UIKit.UITableView, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.UIKit.UITableViewCellEditingStyle, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "MonoTouch.Foundation.NSIndexPath, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "CommitEditingStyle");
-	}
-
-	-(void) OnAdd:(id)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIButton, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "OnAdd");
-	}
-
-	-(bool) textFieldShouldReturn:(id)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UITextField, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "ShouldReturn");
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "MonoTouch.UIKit.UIButton, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", "bravosoc.AddSocialContact, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", "Clicked");
 	}
 
 	-(bool) conformsToProtocol:(void *)p0
@@ -1724,9 +1738,9 @@ bool native_to_managed_trampoline_17 (id self, SEL _cmd, MonoMethod **managed_me
 		{"AppDelegate", "bravosoc.AppDelegate, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"UIResponder", "MonoTouch.UIKit.UIResponder, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"UIViewController", "MonoTouch.UIKit.UIViewController, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
-		{"AddSocialContact", "bravosoc.AddSocialContact, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"UITableViewController", "MonoTouch.UIKit.UITableViewController, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"QSTodoListViewController", "bravosoc.QSTodoListViewController, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
+		{"AddSocialContact", "bravosoc.AddSocialContact, bravosoc, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null", NULL },
 		{"NSArray", "MonoTouch.Foundation.NSArray, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"NSBundle", "MonoTouch.Foundation.NSBundle, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
 		{"NSHTTPCookie", "MonoTouch.Foundation.NSHttpCookie, monotouch, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", NULL },
@@ -1797,9 +1811,9 @@ void monotouch_create_classes () {
 	__monotouch_class_map [1].handle = [AppDelegate class];
 	__monotouch_class_map [2].handle = objc_getClass ("UIResponder");
 	__monotouch_class_map [3].handle = objc_getClass ("UIViewController");
-	__monotouch_class_map [4].handle = [AddSocialContact class];
-	__monotouch_class_map [5].handle = objc_getClass ("UITableViewController");
-	__monotouch_class_map [6].handle = [QSTodoListViewController class];
+	__monotouch_class_map [4].handle = objc_getClass ("UITableViewController");
+	__monotouch_class_map [5].handle = [QSTodoListViewController class];
+	__monotouch_class_map [6].handle = [AddSocialContact class];
 	__monotouch_class_map [7].handle = objc_getClass ("NSArray");
 	__monotouch_class_map [8].handle = objc_getClass ("NSBundle");
 	__monotouch_class_map [9].handle = objc_getClass ("NSHTTPCookie");
