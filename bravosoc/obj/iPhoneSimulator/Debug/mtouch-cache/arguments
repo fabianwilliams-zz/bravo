@@ -1,0 +1,47 @@
+# Version: 8.4.0.47 (7244769)
+# [first argument, ignore] # /Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/bravosoc/bin/iPhoneSimulator/Debug/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.4.0.47/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/bravosoc/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/bravosoc/bin/iPhoneSimulator/Debug/bravosoc.app \
+	-r \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/packages/WindowsAzure.MobileServices.1.3.0/lib/monotouch/Microsoft.WindowsAzure.Mobile.dll \
+	-r \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/packages/WindowsAzure.MobileServices.1.3.0/lib/monotouch/Microsoft.WindowsAzure.Mobile.Ext.dll \
+	-r \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/packages/WindowsAzure.MobileServices.SQLiteStore.1.0.0/lib/portable-win+net45+wp8+wpa81+monotouch+monoandroid/Microsoft.WindowsAzure.Mobile.SQLiteStore.dll \
+	-r \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/packages/SQLitePCL.3.8.5.1/lib/MonoTouch/SQLitePCL.dll \
+	-r \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/packages/SQLitePCL.3.8.5.1/lib/MonoTouch/SQLitePCL.Ext.dll \
+	-r \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/packages/Newtonsoft.Json.6.0.4/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Net.Http.dll \
+	-r \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/packages/Microsoft.Net.Http.2.2.28/lib/monotouch/System.Net.Http.Extensions.dll \
+	-r \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/packages/Microsoft.Net.Http.2.2.28/lib/monotouch/System.Net.Http.Primitives.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Runtime.Serialization.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	8.1 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/bravosoc/bin/iPhoneSimulator/Debug/bravosoc.exe \
