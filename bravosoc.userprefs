@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5s.8.1" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="bravosoc/AddSocialContact.cs" Line="21" Column="21" />
+      <File FileName="bravosoc/ToDoItem.cs" Line="21" Column="21" />
+      <File FileName="bravosocService/DataObjects/TodoItem.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

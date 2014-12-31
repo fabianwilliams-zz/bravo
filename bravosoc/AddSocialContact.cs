@@ -55,7 +55,7 @@ namespace bravosoc
 			var index = todoService.Items.FindIndex (item => item.Id == newItem.Id);
 
 			//update Message Label of Success
-			lblMessgeAdd.Text = "Contact: " + txtName + " added!";
+			lblMessgeAdd.Text = "Contact: " + txtName.Text + " added!";
 
 			txtName.Text = "";
 			txtFB.Text = "";
