@@ -1,10 +1,12 @@
-# Version: 8.4.0.47 (7244769)
+# Version: 8.6.0.51 (dfb682f)
 # [first argument, ignore] # /Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/bravosoc/bin/iPhoneSimulator/Debug/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/8.4.0.47/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.6.0.51/bin/mtouch-64 \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
 	/Users/devpreso/Documents/1CodeProjects/Xamarin/Learning/bravo/bravosoc/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--executable \
+	bravosoc \
 	--nomanifest \
 	--nosign \
 	-sim \
